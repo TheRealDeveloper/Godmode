@@ -1,0 +1,5 @@
+name: GodModCMD
+version: 0.1
+api: [3.0.0]
+main: achedon12\godmod\GodMod
+author: Achedon12
