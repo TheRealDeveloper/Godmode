@@ -1,6 +1,5 @@
 # About
 
-![CustomBuyRankUI](icon.png)
 
 [FR] Vous permet d'ajouter d'être invicible 
 
