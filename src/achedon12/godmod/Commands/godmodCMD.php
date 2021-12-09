@@ -7,8 +7,10 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\event\Listener;
 use pocketmine\player\Player;
+use pocketmine\plugin\Plugin;
+use pocketmine\plugin\PluginOwned;
 
-class godmodCMD extends Command implements Listener{
+class godmodCMD extends Command implements PluginOwned {
 
     public function __construct(string $name, string $description = "", string $usageMessage = null, array $aliases = [])
     {
@@ -31,6 +33,12 @@ class godmodCMD extends Command implements Listener{
         }else{
             $sender->sendMessage("Please run this command in game");
         }
+
+
+    }
+
+    public function getOwningPlugin() : Plugin{
+        return Godmod::getInstance();
     }
 
 
